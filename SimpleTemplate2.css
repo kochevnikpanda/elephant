@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html, html * {
+  font-family: Roboto;
+  font-color: white;
+}
+
+
+/* Main Page Settings */
+
+
+#body {
+
+background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 90vh;
+    color: white;
+}
+
+#h1 {
+
+    color: ghostwhite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+}
+
+#main {
+
+background: black;
+color: white;
+
+}
+
+
+
+
+
+/* Main menu settings */
+#menu {
+    clear: both;
+    margin: 0;
+    padding-bottom: 10px;
+    width: 100%;
+    /* Menu font */
+    font-size: 90%;
+    /* Menu text size */
+    z-index: 1000;
+    /* This makes the dropdown menus appear above the page content below */
+    position: relative;
+    height: 20px;
+    align-items: center;
+
+}
+
+/* Top menu items */
+#menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+#menu ul li {
+    padding: 0;
+    float: left;
+    position: relative;
+    width: 11%;
+    /*the width depends on how many menu items you have*/
+    top: 4px;
+}
+#menu ul li a {
+    width: auto;
+    text-align: center;
+    display: block;
+    margin: 0;
+    padding: 6px 0px;
+    font-size: 16px;
+    line-height: normal;
+    
+    box-shadow: 0 0 1px 1px whitesmoke;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+#menu ul li a:hover {
+    background: black;
+    /* Top menu items background colour */
+    color: indianred;
+}
+
+
+/* Submenu items */
+#menu ul ul {
+    display: none;
+    /* Sub menus are hiden by default */
+    position: absolute;
+    left: 0;
+    right: auto;
+    /*resets the right:50% on the parent ul */
+    /*width: 150px;*/
+    /* width of the drop-down menus */
+}
+#menu ul ul li {
+    left: auto;
+    /*resets the left:50% on the parent li */
+    margin: 0;
+    /* Reset the 1px margin from the top menu */
+    clear: left;
+    width: 250px;
+    /*will need to be adjusted based on the width of the width of the menu ul li*/
+}
+#menu ul ul li a, #menu ul li:hover ul li a {
+    border-radius: 0px;
+    /* This line is required for IE 6 and below */
+    font-size: 12px;
+    font-weight: normal;
+    /* resets the bold set for the top level menu items */
+    background: linear-gradient(90deg, rgba(120,311,240,1) 0%, rgba(129,105,140,1) 100%);
+    color: ghostwhite;
+    line-height: 15px;
+    /* overwrite line-height value from top menu */
+    border-bottom: 1px solid #ddd;
+    /* sub menu item horizontal lines */
+}
+#menu ul ul li a:hover, #menu ul li a:hover, #menu ul li:hover ul li a:hover, #menu ul li a:hover {
+    /* This line is required for IE 6 and below */
+    background: mediumpurple;
+    /* Sub menu items background colour */
+    color: whitesmoke;
+}
+
+/* Flip the last submenu so it stays within the page */
+
+#menu ul ul.last {
+    left: auto;
+    /* reset left:0; value */
+    right: 0;
+    /* Set right value instead */
+}
+
+/* Make the sub menus appear on hover */
+
+#menu ul li:hover ul {
+    /* This line is required for IE 6 and below */
+    display: block;
+    /* Show the sub menus */
+}
+
+
+.container {
+    position: relative;
+  background:#000;
+  width:1500px;
+  height:840px;
+  margin: 0 auto;
+  padding: 10px 10px 0 10px; 
+color: white;
+}
+
+  
